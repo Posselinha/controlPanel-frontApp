@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "controlPanel-frontApp",
-    "slug": "controlPanel-frontApp",
+    "slug": "controlPanel",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gabrielpossela.controlPanelfrontApp"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "67a122ca-fb57-4124-967f-f85eef906cbf"
+      }
+    },
+    "owner": "gabrielpossela"
   }
 }
