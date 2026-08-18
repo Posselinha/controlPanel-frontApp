@@ -1,6 +1,5 @@
 import { View } from "@/components/Themed";
 import { apiService } from "@/services/api";
-import { testService } from "@/services/test";
 import { Link } from "expo-router";
 import { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, TouchableOpacity } from "react-native";
@@ -9,14 +8,6 @@ export default function HomeScreen() {
   const [statusApi, setStatusApi] = useState('');
   const [name, inputName] = useState('');
   const [password, inputPassword] = useState('');
-
-  const testInput = async (username: string, password: string) => {
-    try {
-      const data = await testService.nameService(username, password);
-    } catch (error) {
-      console.error(error);
-    }
-  }
 
   const testarConexao = async () => {
     try {

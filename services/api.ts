@@ -1,3 +1,5 @@
+import { getDeviceKey } from "./authServices";
+
 const API_URL = 'https://controlpanel-app.gabrielfilipeposs.workers.dev';
 
 export type Produto = {
@@ -20,6 +22,7 @@ export const apiService = {
     },
 
     async loginUser(username: string, password: string) {
+        console.log("Device Key", await getDeviceKey());
         const res = await fetch(`${API_URL}/login`, {
             method: "POST",
             headers: {
